@@ -6,4 +6,4 @@ from .oriented_points_picker import oriented_points_picker
 @napari_hook_implementation
 def napari_experimental_provide_dock_widget():
     # you can return either a single widget, or a sequence of widgets
-    return oriented_points_picker
+    return (oriented_points_picker, dict(area='right', name='Oriented Points Picker'))
